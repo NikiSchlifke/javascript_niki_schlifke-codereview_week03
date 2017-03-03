@@ -1,3 +1,24 @@
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  main nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
 
+footer {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow: 1; }
+  footer .footer--info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    footer .footer--info .footer-text {
+      flex-grow: 1; }
 
 /*# sourceMappingURL=desktop.css.map */

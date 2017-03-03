@@ -1,0 +1,21 @@
+@import "mixins";
+
+main {
+	@include horiz(space-between);
+	nav {
+		@include vert(center);
+	}
+}
+
+footer {
+	justify-content: center;
+	@include horiz(space-between);
+	flex-grow: $footer-grow;
+	.footer--info {
+		flex-grow: 1;
+		@include vert();
+		.footer-text {
+			flex-grow: 1;
+		}
+	}
+}

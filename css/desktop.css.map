@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAEA,IAAK;EC0BJ,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,eAAe,ED3BA,aAAa;EAC5B,QAAI;ICkBJ,OAAO,EAAE,IAAI;IACb,cAAc,EAAE,MAAM;IACtB,eAAe,EDnBA,MAAM;;AAItB,MAAO;EACN,eAAe,EAAE,MAAM;ECkBvB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,eAAe,EDnBA,aAAa;EAC5B,SAAS,ECMI,CAAC;EDLd,oBAAc;IACb,SAAS,EAAE,CAAC;ICQb,OAAO,EAAE,IAAI;IACb,cAAc,EAAE,MAAM;IACtB,eAAe,EAHM,YAAY;IDLhC,iCAAa;MACZ,SAAS,EAAE,CAAC",
+"sources": ["../scss/desktop.scss","../scss/mixins.scss"],
 "names": [],
 "file": "desktop.css"
 }

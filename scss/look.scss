@@ -1,0 +1,37 @@
+@import "mixins";
+@import url('https://fonts.googleapis.com/css?family=Baloo');
+$background-large: #DDEEFF;
+$background-medium: #CCDDEE;
+$background-small: #BBCCDD;
+body {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+    background-color: $background-large;
+    #logo {
+        div h1 {
+            @include mediummargin;
+            color: #1155AA;
+            font-family: 'Baloo', cursive;
+            font-size: 3em;
+            text-shadow: 0px 0px 30px #1155AA;
+            letter-spacing: 0.62em;
+        }
+    }
+}
+footer {
+	background-color: $background-large;
+}
+main {
+    nav {
+        background-color: $background-medium;
+    }
+    .pagelink {
+    	@include smallmargin;
+    }
+}

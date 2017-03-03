@@ -1,0 +1,50 @@
+// @mixin flex($radius: 0px $margin: 0px, $padding: 0px) {
+// 	display: flex;
+// 	margin: $margin;
+// 	padding: $padding;
+// 	border-radius: $radius;
+// }
+
+// @mixin flex($radius: 0px $margin: 0px, $padding: 0px) {
+// 	display: flex;
+// 	margin: 0px;
+// 	padding: 0px;
+// 	border-radius: 0px;
+// }
+$smallscreen-width: 1280px;
+$smallscreen-height: 720px;
+$mobile-width: 768px;
+$header-grow: 2;
+$main-grow: 100;
+$footer-grow: 1;
+$nav-grow: 1;
+$content-grow: 10;
+@mixin vert($justify: space-around) {
+	display: flex;
+	flex-direction: column;
+	justify-content: $justify;
+}
+
+@mixin horiz($justify: space-around) {
+	display: flex;
+	flex-direction: row;
+	justify-content: $justify;
+
+}
+
+
+@mixin smallmargin() {
+	margin: 0.62em;
+}
+@mixin mediummargin() {
+	margin: 1em;
+}
+@mixin largemargin() {
+	margin: 1.62em;
+}
+
+@mixin withborder() {
+	border-style: solid;
+	border-color: 887766;
+	border-width: 1px;
+}

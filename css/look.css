@@ -1,3 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo");
+body {
+  font-family: Tahoma, Geneva, Verdana, sans-serif; }
 
+a {
+  text-decoration: none; }
+
+header {
+  background-color: #DDEEFF; }
+  header #logo div h1 {
+    margin: 1em;
+    color: #1155AA;
+    font-family: 'Baloo', cursive;
+    font-size: 3em;
+    text-shadow: 0px 0px 30px #1155AA;
+    letter-spacing: 0.62em; }
+
+footer {
+  background-color: #DDEEFF; }
+
+main nav {
+  background-color: #CCDDEE; }
+main .pagelink {
+  margin: 0.62em; }
 
 /*# sourceMappingURL=look.css.map */
