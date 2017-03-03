@@ -36,7 +36,43 @@ $("#quote--form").submit(function(e) {
 $('#quote--submit')[0].addEventListener("click", function() {
 	var contents = getContents();
 	console.log(contents);
+	var price = getPrice(100, contents);
+	console.log('Price: €'+price);
 	// fix page refresh
 	return false;
 })
 
+function getCountryFactor(country) {
+
+	switch (country) {
+		case "Austria":
+		return 1;
+
+		case "Italy":
+		return 0.8;
+		
+		case "Spain":
+		return 0.9;
+		
+		case "France":
+		return 1.2;
+		
+		case "Germany":
+		return 1.3;
+		
+	}
+
+}
+
+function horsePowerFactor(horsepower) {
+	return 1+ Math.log(Number(horsepower));
+}
+
+function ageFactor(age) {
+	return 1+ Math.log(Math.abs(30 - Number(age))*3);
+}
+
+function getPrice(basePrice, parameterObj) {
+	return basePrice*ageFactor(parameterObj.age)
+	*horsePowerFactor(parameterObj.horsepower);
+}
