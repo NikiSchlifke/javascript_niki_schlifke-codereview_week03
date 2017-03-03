@@ -36,7 +36,7 @@ $("#quote--form").submit(function(e) {
 $('#quote--submit')[0].addEventListener("click", function() {
     var contents = getContents();
     console.log(contents);
-    var price = getPrice(100, contents);
+    var price = getPrice(10, contents);
     console.log('Price: €' + price);
 
     $('#quote').append($('<p>').append('Price: €' + price));
