@@ -18,15 +18,15 @@ Hint: to process the country of origin into numerical values, you can use a swit
 
 
 function getContents() {
-	return {
-		firstName: document.getElementsByName('firstname')[0].value,
-		lastName: document.getElementsByName('lastname')[0].value,
-		age: document.getElementsByName('age')[0].value,
-		gender: document.getElementsByName('gender')[0].value,
-		origin: document.getElementsByName('origin')[0].value,
-		horsepower: document.getElementsByName('horsepower')[0].value,
-		residence: document.getElementsByName('residence')[0].value
-	}
+    return {
+        firstName: document.getElementsByName('firstname')[0].value,
+        lastName: document.getElementsByName('lastname')[0].value,
+        age: document.getElementsByName('age')[0].value,
+        gender: document.getElementsByName('gender')[0].value,
+        origin: document.getElementsByName('origin')[0].value,
+        horsepower: document.getElementsByName('horsepower')[0].value,
+        residence: document.getElementsByName('residence')[0].value
+    }
 }
 
 // fix page refresh
@@ -34,45 +34,48 @@ $("#quote--form").submit(function(e) {
     e.preventDefault();
 });
 $('#quote--submit')[0].addEventListener("click", function() {
-	var contents = getContents();
-	console.log(contents);
-	var price = getPrice(100, contents);
-	console.log('Price: €'+price);
-	// fix page refresh
-	return false;
+    var contents = getContents();
+    console.log(contents);
+    var price = getPrice(100, contents);
+    console.log('Price: €' + price);
+    // fix page refresh
+    return false;
 })
 
 function getCountryFactor(country) {
 
-	switch (country) {
-		case "Austria":
-		return 1;
+    switch (country) {
+        case "Austria":
+            return 1;
 
-		case "Italy":
-		return 0.8;
-		
-		case "Spain":
-		return 0.9;
-		
-		case "France":
-		return 1.2;
-		
-		case "Germany":
-		return 1.3;
-		
-	}
+        case "Italy":
+            return 0.8;
+
+        case "Spain":
+            return 0.9;
+
+        case "France":
+            return 1.2;
+
+        case "Germany":
+            return 1.3;
+
+    }
 
 }
 
 function horsePowerFactor(horsepower) {
-	return 1+ Math.log(Number(horsepower));
+    var factor = 1 + Math.log(Number(horsepower));
+    console.log(factor);
+    return factor;
 }
 
 function ageFactor(age) {
-	return 1+ Math.log(Math.abs(30 - Number(age))*3);
+    var factor = 1+Math.log(1+ Math.abs((30 - Number(age)))));
+    console.log(factor);
+    return factor;
 }
 
 function getPrice(basePrice, parameterObj) {
-	return basePrice*ageFactor(parameterObj.age)
-	*horsePowerFactor(parameterObj.horsepower);
+    return basePrice * ageFactor(parameterObj.age) * horsePowerFactor(parameterObj.horsepower);
 }
