@@ -59,7 +59,9 @@ footer {
   max-height: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin: 1em;
+  padding: 1em; }
   .item .image {
     flex-grow: 8; }
     .item .image .item--image {
@@ -129,6 +131,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap;
+    align-items: center; } }
 
 /*# sourceMappingURL=layout.css.map */

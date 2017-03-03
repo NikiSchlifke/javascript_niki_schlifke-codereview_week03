@@ -23,4 +23,5 @@ footer {
 #quote {
     @include vert(space-around);
     flex-wrap: wrap;
+    align-items: center;
 }

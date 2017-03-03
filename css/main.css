@@ -60,7 +60,9 @@ footer {
   max-height: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin: 1em;
+  padding: 1em; }
   .item .image {
     flex-grow: 8; }
     .item .image .item--image {
@@ -130,7 +132,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap;
+    align-items: center; } }
 body {
   font-family: Tahoma, Geneva, Verdana, sans-serif; }
 
@@ -154,5 +157,8 @@ main nav {
   background-color: #CCDDEE; }
 main .pagelink {
   margin: 0.62em; }
+
+.item {
+  background-color: #BBCCDD; }
 
 /*# sourceMappingURL=main.css.map */

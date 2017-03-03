@@ -26,6 +26,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  align-items: center; }
 
 /*# sourceMappingURL=mobile.css.map */
