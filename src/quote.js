@@ -73,7 +73,7 @@ function horsePowerFactor(horsepower) {
 }
 
 function ageFactor(age) {
-    var factor = 1+Math.log(1+ Math.abs((30 - Number(age))));
+    var factor = 1+Math.log(1+ Math.abs(0.1*(30 - Number(age))));
     console.log(factor);
     return factor;
 }
