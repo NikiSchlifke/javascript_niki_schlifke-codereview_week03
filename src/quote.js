@@ -38,6 +38,8 @@ $('#quote--submit')[0].addEventListener("click", function() {
     console.log(contents);
     var price = getPrice(100, contents);
     console.log('Price: €' + price);
+
+    
     // fix page refresh
     return false;
 })
