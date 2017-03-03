@@ -13,9 +13,9 @@ Upon clicking the button of the form, run a named function that does the followi
 Create a JavaScript Object out of this data and save it in a variable.
 Draw data from this object and run a calculation-logic of your choice,  to arrive at a monthly insurance-offer. (For example men pay 20% more, but people from Italy get 10% discount).
 Display the offer on the page. -->
-    <main>
-        <h2>Get a quote!</h2>
-        <form action="#" id="quote">
+    <h2>Get a quote!</h2>
+    <main id="quote">
+        <form action="#" id="quote--form">
             <div class="quote--question">
                 <div class="quote--text">First Name:
                     <input type="text" class="quote--input">
@@ -40,23 +40,23 @@ Display the offer on the page. -->
                 </div>
             </div>
             <div class="quote--question">
-                <div class="quote--text">Country of origin: 
+                <div class="quote--text">Country of origin:
                     <input type="text" class="quote--input">
                 </div>
             </div>
             <div class="quote--question">
-                <div class="quote--text">Horse power in PS: 
+                <div class="quote--text">Horse power in PS:
                     <input type="number" class="quote--input">
                 </div>
             </div>
             <div class="quote--question">
-                <div class="quote--text">Country of residence: 
+                <div class="quote--text">Country of residence:
                     <select name="residence" id="quote--residence" class="quote--input">
-                    	<option value="Austria">Austria</option>
-                    	<option value="Italy">Italy</option>
-                    	<option value="Spain">Spain</option>
-                    	<option value="France">France</option>
-                    	<option value="Germany">Germany</option>
+                        <option value="Austria">Austria</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Spain">Spain</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
                     </select>
                 </div>
             </div>
