@@ -39,11 +39,40 @@ footer {
     footer .footer--info .footer-text {
       flex-grow: 1; }
 
-.pagelink, .footer--info {
+.pagelink,
+.footer--info {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-grow: 1; }
+
+#employees,
+#locations,
+#quote {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .item .image {
+    flex-grow: 8; }
+    .item .image .item--image {
+      background-size: cover;
+      min-width: 240px;
+      min-height: 320px; }
+  .item .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 2; }
+  .item .link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1; }
 
 @media (min-width: 1280px) and (min-height: 720px) {
   main {
@@ -89,6 +118,13 @@ footer {
       flex-direction: column;
       justify-content: space-around; }
       footer .footer--info .footer-text {
-        flex-grow: 1; } }
+        flex-grow: 1; }
+
+  #employees,
+  #locations,
+  #quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; } }
 
 /*# sourceMappingURL=layout.css.map */

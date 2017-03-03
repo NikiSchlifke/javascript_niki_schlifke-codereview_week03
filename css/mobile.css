@@ -20,4 +20,11 @@ footer {
     footer .footer--info .footer-text {
       flex-grow: 1; }
 
+#employees,
+#locations,
+#quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
 /*# sourceMappingURL=mobile.css.map */

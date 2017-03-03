@@ -1,58 +1,80 @@
 @import "mixins";
-
-
-
 body {
-	margin: 0;
-	padding: 0;
-	min-height: 100vh;
-	@include vert(space-between);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    @include vert(space-between);
 }
 
-
-
 header {
-	@include horiz;
-	flex-grow: $header-grow;
+    @include horiz;
+    flex-grow: $header-grow;
 }
 
 main {
-	@include vert;
-	nav {
-		@include horiz;
-		flex-grow: $nav-grow;
-	}
-
-	iframe {
-		flex-grow: $content-grow;
-	}
-	flex-grow: $main-grow;
+    @include vert;
+    nav {
+        @include horiz;
+        flex-grow: $nav-grow;
+    }
+    iframe {
+        flex-grow: $content-grow;
+    }
+    flex-grow: $main-grow;
 }
 
 footer {
-	justify-content: center;
-	@include horiz();
-	flex-grow: $footer-grow;
-	.footer--info {
-		flex-grow: 1;
-		@include vert();
-		.footer-text {
-			flex-grow: 1;
-		}
-	}
+    justify-content: center;
+    @include horiz();
+    flex-grow: $footer-grow;
+    .footer--info {
+        flex-grow: 1;
+        @include vert();
+        .footer-text {
+            flex-grow: 1;
+        }
+    }
 }
 
-.pagelink, .footer--info {
-	@include horiz;
-	flex-grow: 1;
+.pagelink,
+.footer--info {
+    @include horiz;
+    flex-grow: 1;
+}
 
+#employees,
+#locations,
+#quote {
+    @include horiz(space-around);
+}
+
+.item {
+    @include vert;
+    .image {
+    	// @include horiz(center);
+        .item--image {
+    	background-size: cover;
+            min-width: 240px;
+            min-height: 320px;
+        }
+        flex-grow: 8;
+    }
+    .header {
+    	@include horiz(center);
+
+        flex-grow: 2;
+    }
+    .link {
+    	@include horiz(center);
+
+        flex-grow: 1;
+    }
 }
 
 @media (min-width: $smallscreen-width) and (min-height: $smallscreen-height) {
-	@import "desktop";
+    @import "desktop";
 }
 
-
 @media (max-width: $mobile-width) {
-	@import "mobile";
+    @import "mobile";
 }

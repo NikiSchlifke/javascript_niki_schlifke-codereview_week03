@@ -18,3 +18,9 @@ footer {
 		}
 	}
 }
+
+#employees,
+#locations,
+#quote {
+    @include vert(space-around);
+}
