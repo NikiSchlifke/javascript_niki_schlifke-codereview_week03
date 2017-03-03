@@ -1,26 +1,26 @@
 @import "mixins";
-
 main {
-	@include vert;
-	nav {
-		@include vert;
-	}
+    @include vert;
+    nav {
+        @include vert;
+    }
 }
 
 footer {
-	@include vert(space-between);
-	flex-grow: $footer-grow;
-	.footer--info {
-		flex-grow: 1;
-		@include vert();
-		.footer-text {
-			flex-grow: 1;
-		}
-	}
+    @include vert(space-between);
+    flex-grow: $footer-grow;
+    .footer--info {
+        flex-grow: 1;
+        @include vert();
+        .footer-text {
+            flex-grow: 1;
+        }
+    }
 }
 
 #employees,
 #locations,
 #quote {
     @include vert(space-around);
+    flex-wrap: wrap;
 }

@@ -10,8 +10,8 @@ display that information via a nice text or image.
 var locations = [
     ["Austria", "../images/austria.jpg", "austria@example.com"],
     ["Italy", "../images/italy.jpg", "italy@example.com"],
-    ["Spain", "../images/spain.jpg", "spain@example.com"]
-    ["France", "../images/france.jpg", "france@example.com"]
+    ["Spain", "../images/spain.jpg", "spain@example.com"],
+    ["France", "../images/france.jpg", "france@example.com"],
     ["Germany", "../images/germany.jpg", "germany@example.com"]
 ]
 function LocationConstructor(args) {

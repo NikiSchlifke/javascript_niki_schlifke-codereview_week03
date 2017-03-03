@@ -46,9 +46,12 @@ footer {
 #locations,
 #quote {
     @include horiz(space-around);
+    flex-wrap: wrap;
 }
 
 .item {
+	max-width: 240px;
+	max-height: 500px;
     @include vert;
     .image {
     	// @include horiz(center);

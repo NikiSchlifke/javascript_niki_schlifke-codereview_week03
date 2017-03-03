@@ -51,9 +51,12 @@ footer {
 #quote {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-around;
+  flex-wrap: wrap; }
 
 .item {
+  max-width: 240px;
+  max-height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
@@ -125,6 +128,7 @@ footer {
   #quote {
     display: flex;
     flex-direction: column;
-    justify-content: space-around; } }
+    justify-content: space-around;
+    flex-wrap: wrap; } }
 
 /*# sourceMappingURL=layout.css.map */

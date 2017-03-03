@@ -25,6 +25,7 @@ footer {
 #quote {
   display: flex;
   flex-direction: column;
-  justify-content: space-around; }
+  justify-content: space-around;
+  flex-wrap: wrap; }
 
 /*# sourceMappingURL=mobile.css.map */
