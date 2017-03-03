@@ -19,22 +19,22 @@ Display the offer on the page. -->
         <form action="#" id="quote--form">
             <div class="quote--question">
                 <div class="quote--text">First Name:
-                    <input type="text" class="quote--input">
+                    <input type="text" class="quote--input" name="firstname">
                 </div>
             </div>
             <div class="quote--question">
                 <div class="quote--text">Last Name:
-                    <input type="text" class="quote--input">
+                    <input type="text" class="quote--input" name="lastname">
                 </div>
             </div>
             <div class="quote--question">
                 <div class="quote--text">Age in years:
-                    <input type="number" class="quote--input">
+                    <input type="number" class="quote--input" name="age">
                 </div>
             </div>
             <div class="quote--question">
                 <div class="quote--text">Gender:
-                    <select class="quote--input">
+                    <select class="quote--input" name="gender">
                         <option value="male">male</option>
                         <option value="female">female</option>
                     </select>
@@ -42,17 +42,17 @@ Display the offer on the page. -->
             </div>
             <div class="quote--question">
                 <div class="quote--text">Country of origin:
-                    <input type="text" class="quote--input">
+                    <input type="text" class="quote--input" name="origin">
                 </div>
             </div>
             <div class="quote--question">
                 <div class="quote--text">Horse power in PS:
-                    <input type="number" class="quote--input">
+                    <input type="number" class="quote--input" name="horsepower">
                 </div>
             </div>
             <div class="quote--question">
                 <div class="quote--text">Country of residence:
-                    <select name="residence" id="quote--residence" class="quote--input">
+                    <select id="quote--residence" class="quote--input" name="residence">
                         <option value="Austria">Austria</option>
                         <option value="Italy">Italy</option>
                         <option value="Spain">Spain</option>
@@ -63,7 +63,7 @@ Display the offer on the page. -->
             </div>
             <div class="quote--button">
                 <div class="quote--text">
-                    <button class="quote--input" id="quote--submit">Get Quote</button>
+                    <button class="quote--input" id="quote--submit" name="submit">Get Quote</button>
                 </div>
             </div>
         </form>
